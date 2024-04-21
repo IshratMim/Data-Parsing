@@ -1,7 +1,6 @@
 <template>
-  
     <!--section 1 navbar-->
-    <nav class="bg-gray-800">
+    <nav class=" bg-gray-800">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div class="relative flex h-16 items-center justify-between">
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -12,14 +11,14 @@
                         <span class="absolute -inset-0.5"></span>
                         <span class="sr-only">Open main menu</span>
 
-                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" aria-hidden="true">
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
 
-                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" aria-hidden="true">
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
@@ -98,9 +97,10 @@
         </div>
     </nav>
     <!--section 2-->
-    <div class="border-solid border-b-2 border-gray-300 ">
-        <h3 class="font-bold text-3xl ml-32">Master Price</h3>
+    <div class="border-solid border-b-2 border-gray-300 mb-2">
+        <h3 class=" font-bold text-3xl ml-32">Master Price</h3>
     </div>
+
     <!--section 3-->
     <div class="w-10/12 ml-40 my-4">
         <div class="flex justify-center items-center pb-4  border-b-2 border-indigo-300">
@@ -115,9 +115,9 @@
             </div>
         </div>
         <!--input section-->
-        <div class=" border-b-2 border-indigo-300">
-            <div class="forms">
-                <form class="w-full ">
+        <div class="border-b-2 border-indigo-300">
+            <div class="forms ">
+                <form class="w-full mx-auto">
                     <div class="flex flex-wrap">
 
                         <div class="ml-2 my-2">
@@ -134,26 +134,24 @@
 
                         <div>
 
-                            
 
-                            
+
+
 
                             <div class="antialiased sans-serif">
                                 <div x-data="app()" x-init="[initDate(), getNoOfDays()]" x-cloak>
-                                    <div class="container  px-2   mt-1">
+                                    <div class="container  px-2   mt-2">
                                         <div class=" w-44  bg-blue-100">
 
 
                                             <div class="relative text-xs  ">
                                                 <input type="hidden" name="date" x-ref="date">
                                                 <input type="text" readonly x-model="datepickerValue"
-                                                    
-                                                    
-                                                    class="w-full bg-blue-100 pl-4 pr-10 py-3 leading-none border border-black shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
-                                                    placeholder="Select date">
+                                                    class="w-full h-9  bg-blue-100 pl-4 pr-10 py-2 leading-none border border-black shadow-sm focus:outline-none focus:shadow-outline text-gray-600 font-medium"
+                                                    placeholder="22-12-2022">
 
-                                                <div class="absolute  top-0 right-0 px-3 py-2">
-                                                    <svg class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24"
+                                                <div class="absolute  top-0 right-0 px-3 pt-2">
+                                                    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
                                                         stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
                                                             stroke-width="2"
@@ -164,7 +162,7 @@
 
 
 
-                                                
+
 
                                             </div>
                                         </div>
@@ -172,7 +170,7 @@
                                     </div>
                                 </div>
 
-                                
+
                             </div>
 
                         </div>
@@ -228,7 +226,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="font-semibold text-2xl ml-2 ">+</div>
+                        <div class="font-semibold text-2xl ml-2 mt-2">+</div>
                         <div class="ml-2 my-2">
                             <div class="relative">
                                 <select
@@ -369,37 +367,76 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr
+                    <tr v-for="flight in flightOffer.flightOffer"
                         class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                        <th scope="row" class="px-6 py-2 font-medium text-gray-500 whitespace-nowrap dark:text-white">
-                            Arab Emirates
-                        </th>
                         <td class="px-6 py-3">
-                            Jani na
+
+                            <div v-for="itineraris in flight.itineraries">
+                                <div v-for="segments in itineraris.segments">
+                                    {{ segments.marketingCarrier }} {{ segments.aircraft }}
+                                </div>
+
+                            </div>
                         </td>
                         <td class="px-6 py-3">
-                            Jani na
+                            <div v-for="itineraris in flight.itineraries">
+                                <div v-for="segments in itineraris.segments">
+                                    {{ segments.flightNumber }}
+                                </div>
+
+                            </div>
                         </td>
                         <td class="px-6 py-3">
-                            Jani na
+                            <div v-for="flightClass in flight.class">
+                                <div v-for="flClass in flightClass">
+                                    {{ flClass }}
+                                </div>
+
+                            </div>
                         </td>
                         <td class="px-6 py-3">
-                            Jani na
+                            <div v-for="fareBasis in flight.fareBasis">
+                                <div v-for="fare in fareBasis">
+                                    {{ fare }}
+                                </div>
+
+                            </div>
                         </td>
                         <td class="px-6 py-3">
-                            Jani na
+                            <div v-for="itineraris in flight.itineraries">
+                                <div v-for="segments in itineraris.segments">
+                                    {{ segments.departure.iataCode }} - {{ segments.arrival.iataCode }}
+                                </div>
+
+                            </div>
                         </td>
                         <td class="px-6 py-3">
-                            Jani na
+                            <div v-for="itineraris in flight.itineraries">
+                                <div v-for="segments in itineraris.segments">
+                                    {{ segments.departure.at }}
+                                </div>
+
+                            </div>
                         </td>
                         <td class="px-6 py-3">
-                            Jani na
+                            <div v-for="itineraris in flight.itineraries">
+                                <div v-for="segments in itineraris.segments">
+                                    {{ segments.arrival.at }}
+                                </div>
+
+                            </div>
+                        </td>
+                        <td class="px-6 py-3">
+                            <div v-for="itineraris in flight.itineraries">
+                                {{ itineraris.duration }}
+
+                            </div>
                         </td>
 
                         <td class="px-6 py-3">
                             <div class="flex flex-col">
 
-                                <div>jani na</div>
+                                <div>{{ flight.price }}</div>
                                 <div>
                                     <button
                                         class="bg-indigo-900 ml-76 hover:bg-blue-900 text-white  py-1 px-4 mb-1 border border-blue-700 rounded">
@@ -413,8 +450,14 @@
             </table>
         </div>
     </div>
-
 </template>
-
-
-
+<script>
+import jsonData from '../public/data.json';
+export default {
+    data() {
+        return {
+            flightOffer: jsonData
+        };
+    }
+};
+</script>
