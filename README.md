@@ -1,7 +1,8 @@
 # Project setup steps
 ## Step 1
-clone this repository
+Clone this repository
 ## Step 2
+Run this command
 ```
 npm install
 ```
