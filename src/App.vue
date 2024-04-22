@@ -102,7 +102,7 @@
     </div>
 
     <!--section 3-->
-    <div class="w-10/12 ml-40 my-4">
+    <div class="w-10/12 mx-auto my-4">
         <div class="flex justify-center items-center pb-4  border-b-2 border-indigo-300">
             <div class="grid grid-cols-3 ">
                 <div class="font-bold text-xs col-span-1 bg-gray-200 px-4 py-2 border border-gray-400"><a href="#">Round
@@ -118,7 +118,7 @@
         <div class="border-b-2 border-indigo-300">
             <div class="forms ">
                 <form class="w-full mx-auto">
-                    <div class="flex flex-wrap">
+                    <div class="flex  flex-wrap">
 
                         <div class="ml-2 my-2">
                             <input
@@ -267,9 +267,10 @@
             </div>
 
         </div>
-        <div class="extra mt-4 border-b-2 border-blue-500">
-            <div class="flex flex-row">
-                <div>
+        <div class="md:justify-around mt-4 border-b-2 border-blue-500">
+            <div class="flex flex-row justify-between">
+                <div class="flex">
+                    <div>
                     <div class="block form-check">
                         <input
                             class="form-check-input appearance-none h-4 w-4 border border-gray-600 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
@@ -284,49 +285,58 @@
                             Options</label>
                     </div>
                 </div>
-                <div class="environment flex-row">
-
-                    <div class=" ">
-
-                        <label class="ml-80 labelEnv font-bold text-black dark:text-gray-300">Environment</label>
-                    </div>
                 </div>
-                <div class="environment flex-row">
+                <div class="flex">
+                    <div class=" flex-row">
 
-                    <div class=" ">
-                        <input checked id="default-radio-2" type="radio" value="" name="default-radio"
-                            class="mt-1 ml-4 file:w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <div class=" ">
 
-                    </div>
+                                <label class="ml-2 labelEnv font-bold text-black dark:text-gray-300">Environment</label>
+                            </div>
+                            </div>
+                            <div class=" flex-row">
+
+                            <div class=" ">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                    class="mt-1 ml-4 file:w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+
+                            </div>
+                            </div>
+                            <div class=" flex-row">
+
+                            <div class=" ">
+
+                                <label class="ml-2 mt-1  font-bold text-black dark:text-gray-300">Dummy</label>
+                            </div>
+                            </div>
+                            <div class=" flex-row">
+
+                            <div class=" ">
+                                <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                    class="mt-1 ml-2 file:w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+
+                            </div>
+                            </div>
+                            <div class=" flex-row">
+
+                            <div class=" ">
+
+                                <label class="ml-2 mt-1 mr-2  font-bold text-black dark:text-gray-300">PDT</label>
+                            </div>
+                            </div>
                 </div>
-                <div class="environment flex-row">
-
-                    <div class=" ">
-
-                        <label class="ml-2 mt-1  font-bold text-black dark:text-gray-300">Dummy</label>
-                    </div>
-                </div>
-                <div class="environment flex-row">
-
-                    <div class=" ">
-                        <input checked id="default-radio-2" type="radio" value="" name="default-radio"
-                            class="mt-1 ml-2 file:w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-
-                    </div>
-                </div>
-                <div class="environment flex-row">
-
-                    <div class=" ">
-
-                        <label class="ml-2 mt-1 mr-96  font-bold text-black dark:text-gray-300">PDT</label>
-                    </div>
-                </div>
-                <div class="button flex-row">
+                <div class="flex">
+                    <div class="button flex-row">
                     <button
                         class="bg-indigo-900 ml-76 hover:bg-blue-900 text-white  py-1 px-4 mb-1 border border-blue-700 rounded">
                         SEARCH
                     </button>
                 </div>
+                </div>
+
+                
+                
+                
             </div>
         </div>
 
