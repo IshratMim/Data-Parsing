@@ -1,3 +1,16 @@
+
+Conversation opened. 1 read message. 
+
+Skip to content
+Using Gmail with screen readers
+3 of 160
+code
+Inbox
+
+Sayed Ashif Hayet
+Apr 26, 2024, 8:15 PM (2 days ago)
+to me
+
 <template>
     <!--section 1 navbar-->
     <nav class=" bg-gray-800">
@@ -271,72 +284,72 @@
             <div class="flex flex-row justify-between">
                 <div class="flex">
                     <div>
-                    <div class="block form-check">
-                        <input
-                            class="form-check-input appearance-none h-4 w-4 border border-gray-600 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                            type="checkbox" id="flexCheckDefault">
+                        <div class="block form-check">
+                            <input
+                                class="form-check-input appearance-none h-4 w-4 border border-gray-600 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                type="checkbox" id="flexCheckDefault">
+                        </div>
                     </div>
-                </div>
-                <div class="environment  flex-row">
+                    <div class="environment  flex-row">
 
-                    <div class=" ">
+                        <div class=" ">
 
-                        <label class="ml-2    font-bold text-black dark:text-gray-300">Extra
-                            Options</label>
+                            <label class="ml-2    font-bold text-black dark:text-gray-300">Extra
+                                Options</label>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="flex">
                     <div class=" flex-row">
 
-                            <div class=" ">
+                        <div class=" ">
 
-                                <label class="ml-2 labelEnv font-bold text-black dark:text-gray-300">Environment</label>
-                            </div>
-                            </div>
-                            <div class=" flex-row">
+                            <label class="ml-2 labelEnv font-bold text-black dark:text-gray-300">Environment</label>
+                        </div>
+                    </div>
+                    <div class=" flex-row">
 
-                            <div class=" ">
-                                <input checked id="default-radio-2" type="radio" value="" name="default-radio"
-                                    class="mt-1 ml-4 file:w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <div class=" ">
+                            <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                class="mt-1 ml-4 file:w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
 
-                            </div>
-                            </div>
-                            <div class=" flex-row">
+                        </div>
+                    </div>
+                    <div class=" flex-row">
 
-                            <div class=" ">
+                        <div class=" ">
 
-                                <label class="ml-2 mt-1  font-bold text-black dark:text-gray-300">Dummy</label>
-                            </div>
-                            </div>
-                            <div class=" flex-row">
+                            <label class="ml-2 mt-1  font-bold text-black dark:text-gray-300">Dummy</label>
+                        </div>
+                    </div>
+                    <div class=" flex-row">
 
-                            <div class=" ">
-                                <input checked id="default-radio-2" type="radio" value="" name="default-radio"
-                                    class="mt-1 ml-2 file:w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <div class=" ">
+                            <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                class="mt-1 ml-2 file:w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
 
-                            </div>
-                            </div>
-                            <div class=" flex-row">
+                        </div>
+                    </div>
+                    <div class=" flex-row">
 
-                            <div class=" ">
+                        <div class=" ">
 
-                                <label class="ml-2 mt-1 mr-2  font-bold text-black dark:text-gray-300">PDT</label>
-                            </div>
-                            </div>
+                            <label class="ml-2 mt-1 mr-2  font-bold text-black dark:text-gray-300">PDT</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="flex">
                     <div class="button flex-row">
-                    <button
-                        class="bg-indigo-900 ml-76 hover:bg-blue-900 text-white  py-1 px-4 mb-1 border border-blue-700 rounded">
-                        SEARCH
-                    </button>
-                </div>
+                        <button
+                            class="bg-indigo-900 ml-76 hover:bg-blue-900 text-white  py-1 px-4 mb-1 border border-blue-700 rounded">
+                            SEARCH
+                        </button>
+                    </div>
                 </div>
 
-                
-                
-                
+
+
+
             </div>
         </div>
 
@@ -344,109 +357,90 @@
         <!--table-->
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
             <h4 class="font-bold mb-2">Data Parsed Successfully</h4>
-            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                <thead class="text-xs py-1 text-gray-600 uppercase bg-gray-300 dark:bg-gray-700 dark:text-gray-400">
-                    <tr>
-                        <th scope="col" class="px-6 py-3">
+            <div class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <div
+                    class="flex w-full text-l font-bold  py-3 text-gray-600 uppercase bg-gray-300 dark:bg-gray-700 dark:text-gray-400">
+                    <div class="w-11/12 flex justify-around">
+                        <div class="w-1/12 ">
                             FLIGHT
-                        </th>
-                        <th scope="col" class="px-6 py-3">
+                        </div>
+                        <div class="w-1/12 ">
                             AIRCRAFT
-                        </th>
-                        <th scope="col" class="px-6 py-3">
+                        </div>
+                        <div class="w-1/12 ">
                             CLASS
-                        </th>
-                        <th scope="col" class="px-6 py-3">
+                        </div>
+                        <div class="w-1/12 ">
                             FARE
-                        </th>
-                        <th scope="col" class="px-6 py-3">
+                        </div>
+                        <div class="w-1/12 ">
                             ROUTE
-                        </th>
-                        <th scope="col" class="px-6 py-3">
+                        </div>
+                        <div class="w-2/12 ">
                             DEPARTURE
-                        </th>
-                        <th scope="col" class="px-6 py-3">
+                        </div>
+                        <div class="w-2/12 ">
                             ARRIVAL
-                        </th>
-                        <th scope="col" class="px-6 py-3">
+                        </div>
+                        <div class="w-1/12 ">
                             DURATION
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            PRICE
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="flight in flightOffer.flightOffer"
-                        class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                        <td class="px-6 py-3">
+                        </div>
+                    </div>
 
-                            <div v-for="itineraris in flight.itineraries">
-                                <div v-for="segments in itineraris.segments">
-                                    {{ segments.marketingCarrier }} {{ segments.aircraft }}
+
+                    <div class="w-1/12">
+                        PRICE
+                    </div>
+
+                </div>
+                <div>
+                    <div v-for="flight in flightOffer.flightOffer"
+                        class="w-full flex  odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                        <div v-for="(itineraris, index1) in flight.itineraries" class="w-11/12 ">
+                            <div v-for="(segments, index2) in itineraris.segments"
+                                class="flex w-full justify-around text-l">
+                                <div class="w-1/12 ">
+                                    {{ itineraris.segments[index2].marketingCarrier }} {{
+                                        itineraris.segments[index2].aircraft }}
+
+                                </div>
+                                <div class="w-1/12 ">
+                                    {{ itineraris.segments[index2].flightNumber }}
+
+                                </div>
+                                <div class="w-1/12 ">
+                                    {{ flight.class[index1][index2] }}
+
+                                </div>
+                                <div class="w-1/12">
+                                    {{ flight.fareBasis[index1][index2] }}
+
+                                </div>
+                                <div class="w-1/12 ">
+                                    {{ itineraris.segments[index2].departure.iataCode }} - {{
+                                        itineraris.segments[index2].arrival.iataCode }}
+
+                                </div>
+                                <div class="w-2/12 ">
+                                    {{ itineraris.segments[index2].departure.at }}
+
+                                </div>
+                                <div class="w-2/12 ">
+                                    {{ itineraris.segments[index2].arrival.at }}
+
+                                </div>
+                                <div class="w-1/12 ">
+                                    {{ itineraris.duration }}
+
                                 </div>
 
                             </div>
-                        </td>
-                        <td class="px-6 py-3">
-                            <div v-for="itineraris in flight.itineraries">
-                                <div v-for="segments in itineraris.segments">
-                                    {{ segments.flightNumber }}
-                                </div>
+                        </div>
 
-                            </div>
-                        </td>
-                        <td class="px-6 py-3">
-                            <div v-for="flightClass in flight.class">
-                                <div v-for="flClass in flightClass">
-                                    {{ flClass }}
-                                </div>
-
-                            </div>
-                        </td>
-                        <td class="px-6 py-3">
-                            <div v-for="fareBasis in flight.fareBasis">
-                                <div v-for="fare in fareBasis">
-                                    {{ fare }}
-                                </div>
-
-                            </div>
-                        </td>
-                        <td class="px-6 py-3">
-                            <div v-for="itineraris in flight.itineraries">
-                                <div v-for="segments in itineraris.segments">
-                                    {{ segments.departure.iataCode }} - {{ segments.arrival.iataCode }}
-                                </div>
-
-                            </div>
-                        </td>
-                        <td class="px-6 py-3">
-                            <div v-for="itineraris in flight.itineraries">
-                                <div v-for="segments in itineraris.segments">
-                                    {{ segments.departure.at }}
-                                </div>
-
-                            </div>
-                        </td>
-                        <td class="px-6 py-3">
-                            <div v-for="itineraris in flight.itineraries">
-                                <div v-for="segments in itineraris.segments">
-                                    {{ segments.arrival.at }}
-                                </div>
-
-                            </div>
-                        </td>
-                        <td class="px-6 py-3">
-                            <div v-for="itineraris in flight.itineraries">
-                                {{ itineraris.duration }}
-
-                            </div>
-                        </td>
-
-                        <td class="px-6 py-3">
+                        <div class="w-1/12 ">
                             <div class="flex flex-col">
 
-                                <div>{{ flight.price }}</div>
+                                <div class="text-l">{{ flight.price }}</div>
                                 <div>
                                     <button
                                         class="bg-indigo-900 ml-76 hover:bg-blue-900 text-white  py-1 px-4 mb-1 border border-blue-700 rounded">
@@ -454,10 +448,10 @@
                                     </button>
                                 </div>
                             </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
