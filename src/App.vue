@@ -383,6 +383,7 @@
 
                 </div>
                 <div>
+                    <!--loops-->
                     <div v-for="flight in flightOffer.flightOffer"
                         class="w-full flex  odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                         <div v-for="(itineraris, index1) in flight.itineraries" class="w-11/12 ">
